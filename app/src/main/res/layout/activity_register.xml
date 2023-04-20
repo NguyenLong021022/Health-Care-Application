@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/register_bk_color"
+    android:background="@color/blueSky"
     android:focusableInTouchMode="true"
     android:gravity="center"
     tools:context=".interfaces.RegisterActivity">
@@ -33,11 +33,13 @@
                     android:textColor="@color/whiteTextColor" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="182dp"
+                    android:layout_height="150dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_login_hero" />
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/doctor" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -135,7 +137,7 @@
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:text="Already have an account?"
                         android:textAlignment="center"
-                        android:textColor="@color/themeColor"
+                        android:textColor="@color/blueSky"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 

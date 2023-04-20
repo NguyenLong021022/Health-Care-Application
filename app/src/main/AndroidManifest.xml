@@ -15,16 +15,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".HomeActivity"
+            android:name=".interfaces.HomeActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".interfaces.LoginActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".interfaces.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

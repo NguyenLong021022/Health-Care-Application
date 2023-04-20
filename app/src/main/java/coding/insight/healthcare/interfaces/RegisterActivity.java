@@ -58,10 +58,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = edEmail.getText().toString();
                 String confirmPassword = edConfirmPassword.getText().toString();
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1);
+                //neu ten tai khhoan, mk, emal, sdt = 0 y/c dien het tt
                 if (newUsername.length() == 0 || password.length() == 0 || mobile.length() == 0 ||email.length() == 0) {
                     Toast.makeText(getApplicationContext(), "Please fill all detail!", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                // else
+                else {
                     if(password.compareTo(confirmPassword)==0){
+                        //neu mk hop le, luu vao database va chuyen den man hinh dang nhap
                         if(isValid(password)){
                             db.register(newUsername, email, password);
                             Toast.makeText(getApplicationContext(), "Register Success, Login to start", Toast.LENGTH_SHORT).show();
@@ -107,10 +111,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void changeStatusBarColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-//            window.setStatusBarColor(Color.TRANSPARENT);
+            //window.setStatusBarColor(Color.TRANSPARENT);
             window.setStatusBarColor(getResources().getColor(R.color.register_bk_color));
         }
     }
