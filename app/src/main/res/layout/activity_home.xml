@@ -5,6 +5,144 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".interfaces.HomeActivity"
-    android:background="@color/blueSky">
+    android:background="#F0F2F3"
+    android:orientation="vertical">
+<!--top-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="600dp"
+            android:layout_height="338dp"
+            android:background="@drawable/vien"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-169dp" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/user"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="67dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/option"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="6dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/notification_bell"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="365dp"
+            tools:layout_editor_absoluteY="6dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--find-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:nextFocusDown="@id/constraintLayoutTop"
+        android:id="@+id/constraintLayoutFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:background="@drawable/vien"
+            android:gravity="center"
+            android:hint="How can I help you?"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="191dp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/preview"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="201dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--end-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:nextFocusDown="@id/constraintLayoutFind"
+        android:id="@+id/constraintLayoutEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="431dp"
+            android:layout_height="101dp"
+            android:background="@drawable/vien"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-11dp"
+            tools:layout_editor_absoluteY="635dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calendar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="663dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/suitcase"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="663dp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/more"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="653dp" />
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/message"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="336dp"
+            tools:layout_editor_absoluteY="663dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/info"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="264dp"
+            tools:layout_editor_absoluteY="663dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:nextFocusDown="@id/constraintLayoutEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity=""
+            android:textSize="15sp"
+            android:text="Our Special List"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:layout_editor_absoluteY="264dp" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="309dp"></ListView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
